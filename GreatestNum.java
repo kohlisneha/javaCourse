@@ -18,12 +18,12 @@ public class GreatestNum{
         c=scanner.nextInt();
 
          if(a>b && a>c){
-            System.out.println("Number First is greatest");
+            System.out.println("Number"+a+"is greater");
          }
          else if(b>c && b>a){
             System.out.println("Number Second is greatest");
          }
-         else if(c>a){
+         else if(c>a && c>b){
             System.out.println("Number Third is greatest");
          }
 
