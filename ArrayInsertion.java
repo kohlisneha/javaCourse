@@ -24,6 +24,9 @@
            
 //     }
 // }
+
+
+
 import java.util.Scanner;
 public class ArrayInsertion{
     public static void main(String args[]){
@@ -44,9 +47,14 @@ public class ArrayInsertion{
         System.out.println("values for array a for insertion are");
         for(int i=0;i<n;i++){
             for(int j=0;j<n;j++){
+                
                 System.out.println(a[i][j]);
             }
         }
+        System.out.println("after insertion");
+        System.out.println("enter the value for insertion");
+        int c=sc.nextInt();
+
         
         
         

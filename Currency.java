@@ -29,11 +29,11 @@ public class Currency{
                             System.out.println("notes required of "+a[i]+" : "+c);
                             num= num - (a[i]*c);
                             }}
-                            System.out.println(num);
+                            System.out.println("Money left is: "+num);
                             if(num>0){
                                 for(int i=n-1;i>0;i--){
                                     if(a[i]>=num)
-                                    System.out.println(a[i]);
+                                    System.out.println("Notes required are: "+a[i]);
                                     }
                                     }
 }
