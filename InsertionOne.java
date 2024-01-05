@@ -5,7 +5,7 @@ public class InsertionOne{
         Scanner sc=new Scanner(System.in);
         System.out.println("enter the size");
         n=sc.nextInt();
-        int a[]=new int[n];
+        int a[]=new int[n+1];
         System.out.println("enter the values ");
         for(int i=0;i<n;i++)
         {
@@ -20,14 +20,12 @@ public class InsertionOne{
         int c=sc.nextInt();
         System.out.println("enter the location where you want to insert");
         int d=sc.nextInt();
-       ++n;
-        for(int i=0;i<n;i++){
-        int temp=a[d];
-         a[d+1]=a[d];
-         a[d]=c;
-    
+       
+        for(int i=n-1;i>=d;i--){
+        a[i+1]=a[i];
         }
-         for(int i=0;i<n;i++)
+        a[d]=c;
+         for(int i=0;i<n+1;i++)
          {
          System.out.println("after insertion your array is "+a[i]);
          }
